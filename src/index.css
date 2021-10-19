@@ -33,6 +33,12 @@ a{
 button{
   border:none;
   background: none;
-  
   cursor: pointer;
+
+
+}
+
+button.btn-primary{
+  background-color: #FF3946;
+  color:#fff;
 }
