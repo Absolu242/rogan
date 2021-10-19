@@ -1,6 +1,25 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { HeroSection } from "../styles/home.styles";
+import { NavItems } from "../components/Navbar/navbar.styles";
+import { Heading, HeroSection, WedoSection } from "../styles/home.styles";
+
+const services = [
+  {
+    icon: "/assets1/Icon1.png",
+    name: "Strategy & Research",
+    text: " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt doloribus perspiciatis natus eveniet nesciunt facere.",
+  },
+  {
+    icon: "/assets1/Icon2.png",
+    name: "Design & Development",
+    text: " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt doloribus perspiciatis natus eveniet nesciunt facere.",
+  },
+  {
+    icon: "/assets1/Icon3.png",
+    name: "Management & Marketing",
+    text: " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt doloribus perspiciatis natus eveniet nesciunt facere.",
+  },
+];
 
 export default function Home() {
   return (
@@ -38,6 +57,34 @@ export default function Home() {
           </div>
         </div>
       </HeroSection>
+
+      <WedoSection>
+        <div className="wedo__content">
+          <Heading
+            style={{
+              backgroundImage: `url(/assets1/bgShape.png)`,
+            }}
+          >
+            <div className="title">What we do</div>
+            <div className="text">
+              The Things motivates me is common <br /> form of motivation.
+            </div>
+          </Heading>
+
+          <div className="services">
+            {services.map((item, i) => (
+              <div className="services-item">
+                <img src={item.icon} alt="icon" />
+                <p className="name">{item.name}</p>
+                <p className="text">{item.text}</p>
+                <a href="#" className="link">
+                  <p>More About {item.name}</p>
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </WedoSection>
     </Layout>
   );
 }

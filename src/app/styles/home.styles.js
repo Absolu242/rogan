@@ -69,3 +69,67 @@ export const HeroSection = styled.div`
     }
   }
 `;
+
+export const WedoSection = styled.div`
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  padding-top: 10rem;
+
+  .wedo__content {
+    position: relative;
+  }
+
+  .services {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5rem;
+
+    &-item {
+      width: 30rem;
+      .name {
+        font-size: 2.4rem;
+        color: ${colors.blue};
+        padding: 1.5rem 0;
+      }
+
+      .text {
+        font-size: 1.7rem;
+        color: ${colors.gray};
+      }
+
+      .link {
+        position: relative;
+        color: ${colors.red};
+        font-size: 1.5rem;
+
+        p {
+          margin: 2rem 0;
+        }
+      }
+    }
+  }
+`;
+
+export const Heading = styled.div`
+  width: 100%;
+  height: 100%;
+  background-position: 50% 50%;
+  background-size: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: ${(props) => (props.left ? "left" : "center")};
+
+  .title {
+    color: ${colors.red};
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+
+  .text {
+    font-size: 4rem;
+    color: ${colors.blue};
+    padding: 1.5rem 0;
+  }
+`;
