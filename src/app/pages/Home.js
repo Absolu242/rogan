@@ -1,7 +1,12 @@
 import React from "react";
 import Layout from "../components/Layout";
 import { NavItems } from "../components/Navbar/navbar.styles";
-import { Heading, HeroSection, WedoSection } from "../styles/home.styles";
+import {
+  AboutSection,
+  Heading,
+  HeroSection,
+  WedoSection,
+} from "../styles/home.styles";
 
 const services = [
   {
@@ -85,6 +90,50 @@ export default function Home() {
           </div>
         </div>
       </WedoSection>
+
+      <AboutSection
+        style={{
+          backgroundImage: `url(/assets1/Group.png)`,
+        }}
+      >
+        <div className="about__content">
+          <img className="about-img" src="/assets1/ceo.png" alt="ceo" />
+
+          <div className="about__content--main">
+            <Heading left>
+              <div className="title">About us</div>
+              <div className="text">
+                Leading digital agency <br /> for business solution
+              </div>
+            </Heading>
+
+            <div className="text">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium commodi tempora doloribus, quo esse porro, quas
+                nobis autem enim, voluptas id nisi beatae facere! Totam?
+                <br />
+                <br />
+                <br />
+                <span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam ipsum excepturi tempore. Dicta, hic molestias.
+                </span>
+              </p>
+            </div>
+
+            <div className="author">
+              <p>
+                Rashed Kabir, <span>CEO CreativeGigs</span>
+              </p>
+            </div>
+
+            <div className="more">
+              <button className="btn-primary">Learn More ></button>
+            </div>
+          </div>
+        </div>
+      </AboutSection>
     </Layout>
   );
 }

@@ -133,3 +133,62 @@ export const Heading = styled.div`
     padding: 1.5rem 0;
   }
 `;
+
+export const AboutSection = styled.div`
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background-position: 50% 50%;
+  background-size: no-repeat;
+  background-size: cover;
+
+  .about__content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .about-img {
+      padding-right: 10em;
+    }
+    &--main {
+      position: relative;
+      width: 30%;
+      top: 2.5rem;
+
+      .text {
+        p {
+          font-size: 1.8rem;
+          line-height: 32px;
+          color: ${colors.gray};
+
+          span {
+            color: ${colors.blue};
+            font-weight: 500;
+          }
+        }
+      }
+      .author {
+        color: ${colors.blue};
+        font-size: 1.5rem;
+        padding-top: 2rem;
+
+        span {
+          color: ${colors.gray};
+          font-weight: 500;
+        }
+      }
+
+      .more {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        button.btn-primary {
+          padding: 1.5rem 2.5rem;
+        }
+      }
+    }
+  }
+`;
