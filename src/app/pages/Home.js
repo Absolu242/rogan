@@ -6,6 +6,7 @@ import {
   Heading,
   HeroSection,
   WedoSection,
+  WorkSection,
 } from "../styles/home.styles";
 
 const services = [
@@ -171,6 +172,45 @@ export default function Home() {
           <button className="btn-primary">Contact us</button>
         </div>
       </CompletedSection>
+
+      <WorkSection
+        style={{
+          backgroundImage: `url(/assets1/WorkGallery.png)`,
+        }}
+      >
+        <div className="work__content">
+          <div className="work__content--top">
+            <Heading left>
+              <div className="text">
+                Check some of our <br /> Recent Work
+              </div>
+              <p className="text2">
+                {" "}
+                Click the button on the side to check all of our work
+              </p>
+            </Heading>
+
+            <div className="buttons">
+              <button>View Gallery</button>
+            </div>
+          </div>
+
+          <div className="work__content--list">
+            <a href="http://google.com">
+              <img src="/assets1/work1.png" alt="project" />
+            </a>
+            <a href="http://google.com">
+              <img src="/assets1/work2.png" alt="project" />
+            </a>
+            <a href="http://google.com">
+              <img src="/assets1/work3.png" alt="project" />
+            </a>
+            <a href="http://google.com">
+              <img src="/assets1/work4.png" alt="project" />
+            </a>
+          </div>
+        </div>
+      </WorkSection>
     </Layout>
   );
 }

@@ -132,6 +132,12 @@ export const Heading = styled.div`
     color: ${colors.blue};
     padding: 1.5rem 0;
   }
+
+  .text2 {
+    font-size: 1.3rem;
+    color: ${colors.gray};
+    padding-top: 1.5rem;
+  }
 `;
 
 export const AboutSection = styled.div`
@@ -252,6 +258,55 @@ export const CompletedSection = styled.div`
     button.btn-primary {
       padding: 1.3rem 4rem;
       border-radius: 2.5rem;
+    }
+  }
+`;
+
+export const WorkSection = styled.div`
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  padding-top: 10rem;
+  background-position: 100% 50%;
+  background-size: no-repeat;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  .work__content {
+    position: relative;
+    width: 100%;
+
+    &--top {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 0 15rem 0 25rem;
+
+      .buttons {
+        position: relative;
+        width: 20rem;
+
+        button {
+          padding: 1.4rem 3rem;
+          border: 1px solid ${colors.gray};
+          border-radius: 5px;
+          color: ${colors.blue};
+          font-weight: 600;
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    &--list {
+      position: relative;
+      display: flex;
+      justify-content: space-evenly;
+      padding-top: 5rem;
+      img {
+        width: 95%;
+      }
     }
   }
 `;
