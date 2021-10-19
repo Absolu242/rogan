@@ -291,7 +291,7 @@ export default function Home() {
                 The problem still stands, when it comes time advertise
               </p>
 
-              <a href="http://" className="link">
+              <a href="http://google.com" className="link">
                 <img src="/assets1/Iconarrownext.png" alt="" />
               </a>
             </div>
@@ -311,7 +311,7 @@ export default function Home() {
                 The problem still stands, when it comes time advertise
               </p>
 
-              <a href="http://" className="link">
+              <a href="http://google.com" className="link">
                 <img src="/assets1/Iconarrownext.png" alt="" />
               </a>
             </div>
@@ -331,7 +331,7 @@ export default function Home() {
                 The problem still stands, when it comes time advertise
               </p>
 
-              <a href="http://" className="link">
+              <a href="http://google.com" className="link">
                 <img src="/assets1/Iconarrownext.png" alt="" />
               </a>
             </div>
