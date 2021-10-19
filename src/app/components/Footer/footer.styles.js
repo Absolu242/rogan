@@ -9,10 +9,16 @@ export const FooterContainer = styled.footer`
   background-position: 50% 50%;
   background-size: no-repeat;
   background-size: cover;
+  margin-top: 10rem;
 
   .footer__content {
     display: flex;
     justify-content: space-evenly;
+
+    @media (max-width: 768px) {
+      display: block;
+      padding: 2rem;
+    }
   }
 
   .footer__section {
@@ -44,8 +50,16 @@ export const FooterContainer = styled.footer`
         padding: 1rem 0;
         a {
           font-size: 1.4rem;
+
+          &:hover {
+            color: ${colors.red};
+          }
         }
       }
+    }
+
+    @media (max-width: 768px) {
+      padding: 2rem 0;
     }
   }
 `;

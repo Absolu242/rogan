@@ -14,7 +14,8 @@ export const HeroSection = styled.div`
     .hero__content {
       position: relative;
       transform: translate(30%, 38%);
-      width: 35%;
+      max-width: 55rem;
+      width: 100%;
 
       .promo {
         width: fit-content;
@@ -31,7 +32,7 @@ export const HeroSection = styled.div`
 
       .heading {
         h1 {
-          font-size: 7rem;
+          font-size: 6rem;
           color: ${colors.blue};
           font-weight: 400;
           padding: 2rem 0;
@@ -67,6 +68,29 @@ export const HeroSection = styled.div`
         }
       }
     }
+
+    @media (max-width: 768px) {
+      background-position: 0% 50%;
+      .hero__content {
+        position: relative;
+        transform: translate(0, 38%);
+        width: 100%;
+        padding: 2rem;
+
+        .heading {
+          h1 {
+            font-size: 4rem;
+            padding: 2rem 0;
+          }
+        }
+
+        .text {
+          p {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
   }
 `;
 
@@ -84,6 +108,7 @@ export const WedoSection = styled.div`
     position: relative;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     padding-top: 5rem;
 
     &-item {
@@ -106,6 +131,9 @@ export const WedoSection = styled.div`
 
         p {
           margin: 2rem 0;
+        }
+        &:hover {
+          text-decoration: underline;
         }
       }
     }
@@ -138,6 +166,16 @@ export const Heading = styled.div`
     color: ${colors.gray};
     padding-top: 1.5rem;
   }
+
+  @media (max-width: 768px) {
+    .title {
+      font-size: 1.5rem;
+    }
+
+    .text {
+      font-size: 2.5rem;
+    }
+  }
 `;
 
 export const AboutSection = styled.div`
@@ -157,6 +195,9 @@ export const AboutSection = styled.div`
 
     .about-img {
       padding-right: 10em;
+      img {
+        width: 60%;
+      }
     }
     &--main {
       position: relative;
@@ -190,10 +231,26 @@ export const AboutSection = styled.div`
         width: 100%;
         display: flex;
         justify-content: flex-end;
+        margin: 2rem 0;
 
         button.btn-primary {
           padding: 1.5rem 2.5rem;
         }
+      }
+    }
+
+    @media (max-width: 768px) {
+      padding: 2rem;
+      .about-img {
+        display: none;
+      }
+
+      &--main {
+        width: 100%;
+      }
+
+      .more {
+        justify-content: flex-start;
       }
     }
   }
@@ -219,11 +276,13 @@ export const CompletedSection = styled.div`
     background-size: cover;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-content: center;
     align-items: center;
 
     &-item {
       text-align: center;
+      margin: 2rem 0;
       .numbers {
         color: ${colors.red};
         font-size: 4rem;
@@ -260,6 +319,28 @@ export const CompletedSection = styled.div`
       border-radius: 2.5rem;
     }
   }
+
+  @media (max-width: 768px) {
+    .stats {
+      position: relative;
+      max-width: 100%;
+      min-height: 50vh;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem 0;
+    }
+
+    .cta {
+      position: relative;
+      max-width: 100%;
+      //  min-height: 50vh;
+      display: flex;
+      flex-direction: column;
+      .text {
+        padding: 2rem 0;
+      }
+    }
+  }
 `;
 
 export const WorkSection = styled.div`
@@ -283,6 +364,7 @@ export const WorkSection = styled.div`
       justify-content: space-between;
       align-items: flex-end;
       padding: 0 15rem 0 25rem;
+      flex-wrap: wrap;
 
       .buttons {
         position: relative;
@@ -295,6 +377,7 @@ export const WorkSection = styled.div`
           color: ${colors.blue};
           font-weight: 600;
           font-size: 1.4rem;
+          margin: 1.5rem 0;
         }
       }
     }
@@ -303,9 +386,19 @@ export const WorkSection = styled.div`
       position: relative;
       display: flex;
       justify-content: space-evenly;
+      flex-wrap: wrap;
       padding-top: 5rem;
+
       img {
         width: 95%;
+        margin: 1rem 0;
+      }
+    }
+
+    @media (max-width: 768px) {
+      padding: 2rem;
+      &--top {
+        padding: 0rem;
       }
     }
   }
@@ -374,6 +467,16 @@ export const TestimonialSection = styled.div`
         }
       }
     }
+
+    @media (max-width: 768px) {
+      .about-img {
+        display: none;
+      }
+
+      &--main {
+        width: 80%;
+      }
+    }
   }
 `;
 
@@ -391,6 +494,7 @@ export const BlogSection = styled.div`
     position: relative;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     padding-top: 10rem;
 
     &-item {
@@ -400,6 +504,7 @@ export const BlogSection = styled.div`
       padding: 1.8rem;
       cursor: pointer;
       transition: all 0.3s ease;
+      margin: 1rem 0;
 
       .top {
         display: flex;

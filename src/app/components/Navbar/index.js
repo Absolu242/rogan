@@ -1,14 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavContact, NavContainer, NavItems } from "./navbar.styles";
 
 export default function Navbar() {
+  const [active, setActive] = useState(false);
+
   return (
     <NavContainer>
-      <NavItems>
+      <NavItems active={active}>
         <div className="logo">
           <img src="/assets1/Logo.png" alt="logo" />
         </div>
-
+        <button className="menu" onClick={() => setActive((active) => !active)}>
+          <img
+            src={active ? "/assets1/IconsClose.png" : "/assets1/Menu.png"}
+            alt="logo"
+          />
+        </button>
         <ul>
           <li>
             <a href="http://google.com">Home.</a>

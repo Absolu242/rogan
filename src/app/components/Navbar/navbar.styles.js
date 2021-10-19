@@ -6,7 +6,12 @@ export const NavContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
 `;
+
 export const NavItems = styled.div`
   position: relative;
   display: flex;
@@ -14,6 +19,10 @@ export const NavItems = styled.div`
 
   .logo {
     padding-right: 4rem;
+  }
+
+  .menu {
+    display: none;
   }
 
   ul {
@@ -25,6 +34,44 @@ export const NavItems = styled.div`
 
       a {
         font-size: 2rem;
+
+        &:hover {
+          color: ${colors.red};
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+
+    .logo {
+      img {
+        width: 50%;
+      }
+    }
+    .menu {
+      display: block;
+    }
+
+    ul {
+      position: absolute;
+      display: block;
+      width: 100%;
+      transform: translateY(${(props) => (props.active ? "10rem" : "-20rem")});
+      transition: all 0.3s ease;
+      z-index: 9999;
+      background-color: #fff;
+
+      li {
+        padding: 1rem 0rem;
+
+        a {
+          font-size: 1.5rem;
+        }
       }
     }
   }
@@ -53,5 +100,13 @@ export const NavContact = styled.div`
     border: 2px solid #fafafa;
     border-radius: 5px;
     padding: 1rem 2rem;
+    margin: 1rem 0;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 1.5rem;
+    transform: translateX(0rem);
+    flex-wrap: wrap;
+    padding: 2rem;
   }
 `;

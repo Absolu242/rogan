@@ -81,11 +81,11 @@ export default function Home() {
 
           <div className="services">
             {services.map((item, i) => (
-              <div className="services-item">
+              <div className="services-item" key={i}>
                 <img src={item.icon} alt="icon" />
                 <p className="name">{item.name}</p>
                 <p className="text">{item.text}</p>
-                <a href="#" className="link">
+                <a href="https://google.com" className="link">
                   <p>More About {item.name}</p>
                 </a>
               </div>
