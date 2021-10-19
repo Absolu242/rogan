@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import {
   AboutSection,
+  BlogSection,
   CompletedSection,
   Heading,
   HeroSection,
@@ -236,7 +237,7 @@ export default function Home() {
             <div className="text">
               <p>
                 Having a home based business is a wonderful asset to your life.
-                The problem still stands, when it comes timeadvertise your
+                The problem still stands, when it comes time advertise your
                 business for a cheap cost. I know you have looked for to answer
                 everywhere; I am here to share a few simple creative ways
               </p>
@@ -261,6 +262,82 @@ export default function Home() {
           </div>
         </div>
       </TestimonialSection>
+
+      <BlogSection>
+        <div className="wedo__content">
+          <Heading
+            style={{
+              backgroundImage: `url(/assets1/bgShape.png)`,
+            }}
+          >
+            <div className="title">our Blog</div>
+            <div className="text">Our Company News</div>
+          </Heading>
+
+          <div className="news">
+            <div className="news-item">
+              <div className="top">
+                <img src="/assets1/newsimg.png" alt="news" />
+                <p>
+                  Jannatul Ferdus <br />
+                  <span>06 Aug 2018</span>
+                </p>
+              </div>
+
+              <p className="title">Internet advertising what went wrong</p>
+
+              <p className="text">
+                Having a home based business is a wonderful asset to your life.
+                The problem still stands, when it comes time advertise
+              </p>
+
+              <a href="http://" className="link">
+                <img src="/assets1/Iconarrownext.png" alt="" />
+              </a>
+            </div>
+            <div className="news-item">
+              <div className="top">
+                <img src="/assets1/newsimg.png" alt="news" />
+                <p>
+                  Jannatul Ferdus <br />
+                  <span>06 Aug 2018</span>
+                </p>
+              </div>
+
+              <p className="title">Internet advertising what went wrong</p>
+
+              <p className="text">
+                Having a home based business is a wonderful asset to your life.
+                The problem still stands, when it comes time advertise
+              </p>
+
+              <a href="http://" className="link">
+                <img src="/assets1/Iconarrownext.png" alt="" />
+              </a>
+            </div>
+            <div className="news-item">
+              <div className="top">
+                <img src="/assets1/newsimg.png" alt="news" />
+                <p>
+                  Jannatul Ferdus <br />
+                  <span>06 Aug 2018</span>
+                </p>
+              </div>
+
+              <p className="title">Internet advertising what went wrong</p>
+
+              <p className="text">
+                Having a home based business is a wonderful asset to your life.
+                The problem still stands, when it comes time advertise
+              </p>
+
+              <a href="http://" className="link">
+                <img src="/assets1/Iconarrownext.png" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </BlogSection>
     </Layout>
   );
 }
