@@ -1,8 +1,8 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { NavItems } from "../components/Navbar/navbar.styles";
 import {
   AboutSection,
+  CompletedSection,
   Heading,
   HeroSection,
   WedoSection,
@@ -134,6 +134,43 @@ export default function Home() {
           </div>
         </div>
       </AboutSection>
+
+      <CompletedSection>
+        <Heading>
+          <div className="text">
+            We completed 1500+ Projects Yearly <br />
+            successfully & counting
+          </div>
+        </Heading>
+
+        <div
+          className="stats"
+          style={{
+            backgroundImage: `url(/assets1/ctaBg.png)`,
+          }}
+        >
+          <div className="stats-item">
+            <p className="numbers">16K</p>
+            <p className="name">Global Customer</p>
+          </div>
+          <div className="stats-item">
+            <p className="numbers">1500+</p>
+            <p className="name">Completed Projects</p>
+          </div>
+          <div className="stats-item">
+            <p className="numbers">460+</p>
+            <p className="name">Experrs Worker</p>
+          </div>
+        </div>
+        <div className="cta">
+          <div className="text">
+            <p>Have any question ?</p>
+            <span>Don't hesitate to contact us</span>
+          </div>
+
+          <button className="btn-primary">Contact us</button>
+        </div>
+      </CompletedSection>
     </Layout>
   );
 }

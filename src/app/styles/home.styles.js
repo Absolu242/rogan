@@ -192,3 +192,66 @@ export const AboutSection = styled.div`
     }
   }
 `;
+
+export const CompletedSection = styled.div`
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10rem;
+
+  .stats {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    min-height: 250px;
+    background-position: 50% 50%;
+    background-size: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+
+    &-item {
+      text-align: center;
+      .numbers {
+        color: ${colors.red};
+        font-size: 4rem;
+      }
+      .name {
+        color: ${colors.gray};
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .cta {
+    position: relative;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    border: 1px solid ${colors.gray};
+    border-radius: 5px;
+
+    .text {
+      p {
+        font-size: 2rem;
+        padding: 0.5rem 0;
+      }
+      span {
+        font-size: 1.4rem;
+        color: ${colors.gray};
+      }
+    }
+
+    button.btn-primary {
+      padding: 1.3rem 4rem;
+      border-radius: 2.5rem;
+    }
+  }
+`;
