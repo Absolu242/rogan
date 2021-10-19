@@ -310,3 +310,69 @@ export const WorkSection = styled.div`
     }
   }
 `;
+
+export const TestimonialSection = styled.div`
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background-position: 50% 50%;
+  background-size: no-repeat;
+  background-size: cover;
+  padding-top: 15rem;
+
+  .about__content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .about-img {
+      padding-right: 20em;
+    }
+    &--main {
+      position: relative;
+      width: 30%;
+      top: 2.5rem;
+
+      .text {
+        p {
+          font-size: 1.8rem;
+          line-height: 32px;
+          color: ${colors.gray};
+
+          span {
+            color: ${colors.blue};
+            font-weight: 500;
+          }
+        }
+      }
+      .author {
+        display: flex;
+        align-items: center;
+        color: ${colors.blue};
+        font-size: 1.5rem;
+        padding-top: 2rem;
+
+        img {
+          padding-right: 1rem;
+        }
+        span {
+          color: ${colors.gray};
+          font-weight: 500;
+        }
+      }
+
+      .slide-btns {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-top: 3.5rem;
+
+        button {
+          padding-right: 1rem;
+        }
+      }
+    }
+  }
+`;

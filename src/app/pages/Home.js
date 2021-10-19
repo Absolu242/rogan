@@ -5,6 +5,7 @@ import {
   CompletedSection,
   Heading,
   HeroSection,
+  TestimonialSection,
   WedoSection,
   WorkSection,
 } from "../styles/home.styles";
@@ -211,6 +212,55 @@ export default function Home() {
           </div>
         </div>
       </WorkSection>
+
+      <TestimonialSection
+        style={{
+          backgroundImage: `url(/assets1/reviewbg.png)`,
+        }}
+      >
+        <div className="about__content">
+          <img
+            className="about-img"
+            src="/assets1/ClientImage.png"
+            alt="clients"
+          />
+
+          <div className="about__content--main">
+            <Heading left>
+              <div className="title">Testimonials</div>
+              <div className="text">
+                Check what's our client <br /> say about us!
+              </div>
+            </Heading>
+
+            <div className="text">
+              <p>
+                Having a home based business is a wonderful asset to your life.
+                The problem still stands, when it comes timeadvertise your
+                business for a cheap cost. I know you have looked for to answer
+                everywhere; I am here to share a few simple creative ways
+              </p>
+            </div>
+
+            <div className="author">
+              <img src="/assets1/testiImage.png" alt="client" />
+              <p>
+                Rashed Kabir
+                <br /> <span>Designer</span>
+              </p>
+            </div>
+
+            <div className="slide-btns">
+              <button className="slide-btn">
+                <img src="/assets1/Iconarrowback.png" alt="" />
+              </button>
+              <button className="slide-btn">
+                <img src="/assets1/Iconarrownext.png" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </TestimonialSection>
     </Layout>
   );
 }
